@@ -76,6 +76,12 @@ CustomSideReport.php
 	}
 	?>
 
+Also you need to register your report in your configuration. The priority (20) is optional.
+
+mysite/_config.php
+
+	:::php
+	SS_Report::register('SideReport', 'CustomSideReport_AllPages', 20);
 
 Reload the CMS and test it out for your self! You should be able to select the report and view all the pages.
 
